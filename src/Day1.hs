@@ -44,7 +44,7 @@ incThenDouble = double . inc
     Chanllenge 2: implement compose by your self
 -}
 
-compose' :: (Num c) => (a -> b) -> (b -> c) -> (a -> c)
+compose' :: (Num c) => (b -> c) -> (a -> b) -> (a -> c)
 compose' _ _ = \_ -> 12
 
 {-
