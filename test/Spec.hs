@@ -1,2 +1,7 @@
+import Test.Hspec
+
 main :: IO ()
-main = putStrLn "Test suite not yet implemented"
+main = hspec $ do
+  describe "test" $ do
+    it "should works" $ do
+      (1 + 1) `shouldBe` 2
