@@ -21,3 +21,7 @@ findFirst p as = loop 0
       | n >= length as = -1
       | p $ as !! n    = n         -- a must be an instance of Eq to use ==
       | otherwise      = loop $ n + 1
+
+firstThreeIndex :: Int      
+firstThreeIndex = findFirst (\x -> x == 3) [1,2,3,4,5,4,3,2,1]
+-- anonymous function can be written as \x y -> x + y

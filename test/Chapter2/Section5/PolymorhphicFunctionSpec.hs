@@ -20,3 +20,7 @@ spec = do
       findFirst (== 2) [1,2,2] `shouldBe` 1
     it "should return -1 if target value could not be found" $ do
       findFirst (== 5) [1,2,3] `shouldBe` -1
+
+  describe "firstThreeIndex" $ do
+    it "should be 2" $ do
+      firstThreeIndex `shouldBe` 2
