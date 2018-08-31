@@ -15,8 +15,8 @@ spec = do
 
   describe "findFirst" $ do
     it "should return first matched value index" $ do
-      findFirst 2 [1,2,3] `shouldBe` 1
+      findFirst (== 2) [1,2,3] `shouldBe` 1
     it "should not find the second match" $ do
-      findFirst 2 [1,2,2] `shouldBe` 1
+      findFirst (== 2) [1,2,2] `shouldBe` 1
     it "should return -1 if target value could not be found" $ do
-      findFirst 5 [1,2,3] `shouldBe` -1
+      findFirst (== 5) [1,2,3] `shouldBe` -1

@@ -14,10 +14,10 @@ findFirstString key ss = loop 0
 
 {- Polymorphic Function -}
 
-findFirst :: Eq a => a -> [a] -> Int -- lowercase indicates generic type variables
-findFirst key as = loop 0
+findFirst :: Eq a => (a -> Bool) -> [a] -> Int -- lowercase indicates generic type variables
+findFirst p as = loop 0
   where
     loop n
       | n >= length as = -1
-      | as !! n == key = n         -- a must be an instance of Eq to use ==
+      | p $ as !! n    = n         -- a must be an instance of Eq to use ==
       | otherwise      = loop $ n + 1
