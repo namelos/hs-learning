@@ -14,14 +14,13 @@ spec = do
       it "should be 1 when given Empty" $ do
         product' Empty `shouldBe` 1
       it "should be 24 when given 1,2,3,4" $ do
-        product'
-          (Cons 1 $ Cons 2 $ Cons 3 $ Cons 4 Empty)
-          `shouldBe` 24
+        let list = Cons 1 $ Cons 2 $ Cons 3 $ Cons 4 Empty
+          in product' list `shouldBe` 24
 
 testSum name f =
   context name $ do
     it "should be 0 when given Empty" $ do
       f Empty `shouldBe` 0
     it "should be 6 when given 1,2,3,4" $ do
-      f (Cons 1 $ Cons 2 $ Cons 3 $ Cons 4 Empty)
-        `shouldBe` 10
+      let list = Cons 1 $ Cons 2 $ Cons 3 $ Cons 4 Empty
+        in f list `shouldBe` 10
