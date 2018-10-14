@@ -1,4 +1,14 @@
 {-# LANGUAGE DeriveFoldable #-}
+{-
+  This is language extension,
+  you can enable advanced language feature by
+  add magic comments like this.
+
+  With DeriveFoldable extension enabled you can implement your data
+  as an instance of typeclass Foldable automatically.
+  Which makes your data structure could be folded
+  (fold is called reduce in most of languages)
+ -}
 
 module Chapter3.Section1.PatternMatching where
 
