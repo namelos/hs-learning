@@ -12,7 +12,7 @@
 
 module Chapter3.Section1.LinkedList where
 
-data List' a = Cons a (List' a) | Empty deriving (Foldable, Show)
+data List' a = Cons a (List' a) | Empty deriving (Foldable, Show, Eq)
 
 -- Pattern matching works a bit like a fancy switch
 -- deep into data structures
