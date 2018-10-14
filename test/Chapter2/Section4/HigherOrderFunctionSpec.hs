@@ -11,6 +11,12 @@ spec = do
     it "factorial 5 = 120" $ do
       factorial 5 `shouldBe` 120
 
+  describe "factorialWithNoTailRec" $ do
+    it "factorial 1 = 1" $ do
+      factorialWithNoTailRec 1 `shouldBe` 1
+    it "factorial 5 = 120" $ do
+      factorialWithNoTailRec 5 `shouldBe` 120
+
   describe "formatFactorial" $ do
     it "should return a string describe the factroial of the value" $ do
       formatFactorial 5 `shouldBe` "The factorial of 5 is 120"

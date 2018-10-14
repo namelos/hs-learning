@@ -3,7 +3,7 @@ module Chapter2.Section4.HigherOrderFunction where
 import Text.Printf
 import Chapter2.Section1.SimpleProgram
 
-{- You can define function loacally with where -}
+{- You can define function locally with where -}
 
 factorial :: Int -> Int
 factorial n = go n 1
@@ -11,8 +11,14 @@ factorial n = go n 1
           if n <= 0
           then acc
           else go (n - 1) (n * acc) -- in tail position, only return the recursive call value
--- Tail call compiles to interative loops so it won't easily stackoverflow
+-- Tail call compiles to interactive loops so it won't easily stack overflow
 
+{- You can also define factorial without tail recurse,
+   However it would be memory consuming -}
+
+factorialWithNoTailRec :: Int -> Int
+factorialWithNoTailRec 1 = 1
+factorialWithNoTailRec n = n * factorialWithNoTailRec (n - 1)
 
 {- A plain function -}
 
