@@ -10,7 +10,7 @@
   (fold is called reduce in most of languages)
  -}
 
-module Chapter3.Section1.PatternMatching where
+module Chapter3.Section1.LinkedList where
 
 data List' a = Cons a (List' a) | Empty deriving (Foldable, Show)
 

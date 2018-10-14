@@ -1,6 +1,6 @@
-module Chapter3.Section1.PatternMatchingExercise where
+module Chapter3.Section1.LinkedListExercise where
 
-import Chapter3.Section1.PatternMatching
+import Chapter3.Section1.LinkedList
 
 -- what's the result of this match?
 result =

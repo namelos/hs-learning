@@ -1,6 +1,6 @@
-module Chapter3.Section1.PatternMatchingSpec where
+module Chapter3.Section1.LinkedListSpec where
 
-import Chapter3.Section1.PatternMatching
+import Chapter3.Section1.LinkedList
 import Test.Hspec
 
 spec :: Spec
