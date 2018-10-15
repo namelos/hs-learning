@@ -12,10 +12,15 @@ stack: Build tool (compared to gulp)
 intero (you will build this in the following steps): IDE backend (compared to VSCode language server)
 
 ## Recommended editor
-Visual studio code  
+Visual studio code is easier to setup, it is recommended to use this at the beginning.
 Use this plugin: [Haskero](https://marketplace.visualstudio.com/items?itemName=Vans.haskero)
 
+Or you want a more powerful one: [Intellij-Haskell](https://github.com/rikvdkleij/intellij-haskell)
+Or you want a much more powerful one: [Spacemacs](http://spacemacs.org/)
+
 ## Setup
+This process is quite slow for the first time, since GHC is probably the most complex compiler ever.
+Feel free to do something else during installation.
 ```
 cd hs-learning
 stack setup
