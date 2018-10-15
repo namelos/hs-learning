@@ -4,6 +4,7 @@ import Text.Printf -- Import a module to use its functions
 {- A Simple Haskell Program -}
 
 abs' :: Int -> Int -- Signature, Function abs' takes and Int return an Int
+-- Signatures are optional, most of the time you can also omit it
 abs' n =           -- It has a Int parameter n
   if (n < 0)       -- `if..then..else` is an expression with value
   then -n
