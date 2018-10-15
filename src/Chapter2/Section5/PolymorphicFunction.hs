@@ -1,4 +1,4 @@
-module Chapter2.Section5.PolymorhphicFunction where
+module Chapter2.Section5.PolymorphicFunction where
 
 
 {- Monomorphic Function -}

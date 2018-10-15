@@ -1,6 +1,6 @@
-module Chapter2.Section5.PolymorhphicFunctionSpec where
+module Chapter2.Section5.PolymorphicFunctionSpec where
 
-import Chapter2.Section5.PolymorhphicFunction
+import Chapter2.Section5.PolymorphicFunction
 import Test.Hspec
 
 spec :: Spec
