@@ -33,4 +33,14 @@ stack test
 stack ghci
 ```
 
+## Try to run test interactively with ghci
+```
+stack ghci hs-learning:test:hs-learning-test
+```
+
+## With some option enabled you can type `:r` in REPL to reload implementation and test code
+```
+stack ghci --ghci-options -isrc --ghci-options -itest hs-learning:test:hs-learning-test
+```
+
 Have fun!
