@@ -6,17 +6,16 @@ import Chapter2.Section4.HigherOrderFunctionExercise
 spec :: Spec
 spec = do
   describe "fib" $ do
-    it "returns 0 when given 0" $ do
-      fib 0 `shouldBe` 0
-    it "returns 1 when given 1" $ do
-      fib 1 `shouldBe` 1
-    it "returns 1 when given 2" $ do
-      fib 2 `shouldBe` 1
-    it "reutrns 2 when given 3" $ do
-      fib 3 `shouldBe` 2
-    it "returns 3 when given 4" $ do
-      fib 4 `shouldBe` 3
-    it "returns 5 when given 5" $ do
-      fib 5 `shouldBe` 5
-    it "returns 55 when given 10" $ do
-      fib 10 `shouldBe` 55
+    testFib 0 0
+    testFib 1 1
+    testFib 2 1
+    testFib 3 2
+    testFib 4 3
+    testFib 5 5
+    testFib 10 55
+
+testFib param expect =
+  it msg $ do
+    fib param `shouldBe` expect
+  where
+    msg = "returns" ++ show expect ++ "when given" ++ show param
