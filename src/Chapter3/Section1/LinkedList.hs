@@ -13,13 +13,24 @@
 module Chapter3.Section1.LinkedList where
 
 data List' a = Cons a (List' a) | Empty deriving (Foldable, Show, Eq)
+{-
+  Data defines a data type, like class without method.
+  List' a has two constructors, it's either Cons a (List' a)
+  or just Empty.
+  deriving is declaring this type belongs to which typeclasses,
+  like implementing interfaces, and sometimes give them default implementation.
+  Foldable enables fold function, Show makes it printable,
+  and Eq makes us be able to check if it is equal with another List'.
+-}
 
--- Pattern matching works a bit like a fancy switch
--- deep into data structures
--- Empty matches when the value is exactly Empty
--- (Cons x xs) matches like (Cons 1 (Cons 2 Empty))
--- and x will be 1 and xs will be Cons 2 Empty
--- _ can match any value and discard it
+{-
+  Pattern matching works a bit like a fancy switch
+  deep into data structures
+  Empty matches when the value is exactly Empty
+  (Cons x xs) matches like (Cons 1 (Cons 2 Empty))
+  and x will be 1 and xs will be Cons 2 Empty
+  _ can match any value and discard it
+-}
 sum' :: List' Int -> Int
 sum' Empty = 0
 sum' (Cons x xs) = x + sum' xs
