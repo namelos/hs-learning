@@ -5,10 +5,12 @@ Jump to [Installation](#installation) for quick start if you don't feel like to 
 
 This repository reflects some content in [Functional Programming in Scala](https://www.manning.com/books/functional-programming-in-scala)
 since it's probably one of the best book about functional programming. However, the code in this repository are written in
-Haskell, which is a more pure functional programming language.
+Haskell, which is a more pure functional programming language.  
+The code base is currently structured based on original structure of the book. You can read through the code and comments,
+then finish writing exercises for each section. All non-exercise code are tested, as you can fill in your test for your exercise solutions. 
 
-## Feedback and Contributing
-Feedback and contributing are welcomed. I hope I can make this repository more like an open source project --
+## Feedback and Contribution
+Feedback and contribution are welcomed. I hope I can make this repository more like an open source project --
 people can learn from it any time when then feel like doing it, instead of a series of boring sessions or workshops.   
 Any suggestions are super helpful, and please point out the confusing parts and I'll try to improve it.   
 You can provide feedback by open an [issue](https://github.com/namelos/hs-learning/issues/new),
