@@ -4,11 +4,11 @@ module Chapter2.Section6.FollowingTypeToImplementationExercise where
 -- Take a guess what does the function do base on the name
 -- and signature
 
-curry :: ((a, b) -> c) -> (a -> b -> c)
-curry f = undefined
+curry' :: ((a, b) -> c) -> (a -> b -> c)
+curry' f = \a b -> f (a, b)
 
-uncurry :: (a -> b -> c) -> ((a, b) -> c)
-uncurry f = undefined
+uncurry' :: (a -> b -> c) -> ((a, b) -> c)
+uncurry' f = \(a, b) -> f a b
 
-compose :: (b -> c) -> (a -> b) -> (a -> c)
-compose f g = undefined
+compose' :: (b -> c) -> (a -> b) -> (a -> c)
+compose' f g x = f $ g $ x
