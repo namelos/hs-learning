@@ -18,4 +18,7 @@ spec = do
   describe "compose" $ do
     it "composes functions" $ do
       compose' (+ 1) (* 2) 3 `shouldBe` 7
-
+    it "composes with . operator implementation" $ do
+      compose'' (+ 1) (* 2) 3 `shouldBe` 7
+    it "composes directly with ." $ do
+      ((+ 1) . (* 2)) 3 `shouldBe` 7

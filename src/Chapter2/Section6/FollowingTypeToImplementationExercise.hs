@@ -12,3 +12,7 @@ uncurry' f = \(a, b) -> f a b
 
 compose' :: (b -> c) -> (a -> b) -> (a -> c)
 compose' f g x = f $ g $ x
+
+-- compose actually could be written as .
+compose'' :: (b -> c) -> (a -> b) -> (a -> c)
+compose'' f g = f . g
